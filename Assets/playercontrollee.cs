@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class playercontrollee : MonoBehaviour
 {
+    public float horizontalInput;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class playercontrollee : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        horizontalInput = Input.GetAxis("Horizontal");
     }
 }
